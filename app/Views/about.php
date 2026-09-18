@@ -17,11 +17,9 @@
 
     <div class="container">
         <h1 style="text-align: center;">ABOUT THE POS SYSTEM</h1>
-        <div class="row">
+        <div class="box">
             <p>This is a simple POS system used by a local cafe.</p>
         </div>
-
-
     </div>
 </body>
 </html>
