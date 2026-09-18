@@ -12,28 +12,23 @@ class Index extends Basecontroller{
         return view('about');
     }
 
-    public static function customer(){
+    public function customer(){
         $data = array(
             'customers' => [
-                'name1' => 'John Doe',
-                'age1' => '30',
-                'sex1' => 'Male',
-
-                'name2' => 'Jane Doe', 
-                'age2' => '40',
-                'sex2' => 'Female',
-
-                'name3' => 'John Doe',
-                'age3' => '25',
-                'sex3' => 'Male',
-
-                'name4' => 'John Doe',
-                'age4' => '55',
-                'sex4' => 'Male',
-
-                'name5' => 'Jane Doe',
-                'age5' => '30',
-                'sex5' => 'Female',
+                ['name' => 'John Doe',
+                'age' => '30'],
+                
+                ['name' => 'Jane Doe', 
+                'age' => '21'],
+                
+                ['name' => 'John Doe',
+                'age' => '25'],
+                
+                ['name' => 'John Doe',
+                'age' => '55'],
+                
+                ['name' => 'Jane Doe',
+                'age' => '19']
             ]
 
         );
@@ -41,28 +36,28 @@ class Index extends Basecontroller{
         return view('customers', $data);
     }
 
-        public static function user(){
+        public function user(){
         $data = array(
             'users' => [
-                'name1' => 'John Doe',
-                'age1' => '35',
-                'sex1' => 'Male',
+                ['name' => 'Jane Doe',
+                'age' => '35',
+                'role' => 'Employee'],
 
-                'name2' => 'Jane Doe',
-                'age2' => '21',
-                'sex2' => 'Female',
+                ['name' => 'Jane Doe',
+                'age' => '21',
+                'role' => 'Employee'],
 
-                'name3' => 'John Doe',
-                'age3' => '20',
-                'sex3' => 'Male',
+                ['name' => 'John Doe',
+                'age' => '20',
+                'role' => 'Employee'],
 
-                'name4' => 'John Doe',
-                'age4' => '30',
-                'sex4' => 'Male',
+                ['name' => 'John Doe',
+                'age' => '18',
+                'role' => 'Employee'],
 
-                'name5' => 'Jane Doe',
-                'age5'=> '25',
-                'sex5' => 'Female',
+                ['name' => 'Jane Doe',
+                'age'=> '23',
+                'role' => 'Employee'],
             ]
 
         );

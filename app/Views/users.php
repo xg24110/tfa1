@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo base_url('index.css')?>">
     
     <title>Customers</title>
 </head>
 <body>
-    <a href=<?php echo site_url('/')?>>Home</a>
-    <a href=<?php echo site_url('about')?>>About</a>
-    <a href=<?php echo site_url('customers')?>>Customers</a>
-    <a href=<?php echo site_url('users')?>>Users</a>
+    <div class="nh">
+        <header>
+            <a href=<?php echo site_url('/')?>>Home</a>
+            <a href=<?php echo site_url('about')?>>About</a>
+            <a href=<?php echo site_url('customers')?>>Customers</a>
+            <a href=<?php echo site_url('users')?>>Users</a>
+        </header>
+    </div>
+    
+    <h1 style="text-align:center">USERS</h1>
     <div class="container">
-        <h1 style="text-align: center;">LIST OF USERS</h1>
-
-        <?php
-            foreach($users as $ru){
-                echo $ru."<br>";
-            }
-        ?>
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>ROLE</th>
+            </tr>
+            <?php foreach($users as $ru): ?>
+                <tr>
+                    <td><?php echo esc($ru['name'])?></td>
+                    <td><?php echo esc($ru['age'])?></td>
+                    <td><?php echo esc($ru['role'])?></td>
+                </tr>
+            <?php endforeach?>
+        </table>
     </div>
 </body>
 </html>

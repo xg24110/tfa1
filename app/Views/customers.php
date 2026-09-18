@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo base_url('index.css')?>">
     
     <title>Customers</title>
 </head>
 <body>
-    <a href=<?php echo site_url('/')?>>Home</a>
-    <a href=<?php echo site_url('about')?>>About</a>
-    <a href=<?php echo site_url('customers')?>>Customers</a>
-    <a href=<?php echo site_url('users')?>>Users</a>
+    <div class="nh">
+        <header>
+            <a href=<?php echo site_url('/')?>>Home</a>
+            <a href=<?php echo site_url('about')?>>About</a>
+            <a href=<?php echo site_url('customers')?>>Customers</a>
+            <a href=<?php echo site_url('users')?>>Users</a>
+        </header>
+    </div>
+    
+    <h1 style="text-align:center">CUSTOMERS</h1>
     <div class="container">
-        <h1 style="text-align:center">LIST OF CUSTOMERS</h1>
-
-        <?php
-            foreach($customers as $rc){
-                echo $rc."<br>";
-            }
-        ?>
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+            </tr>
+            <?php foreach($customers as $rc): ?>
+                <tr>
+                    <td><?php echo esc($rc['name'])?></td>
+                    <td><?php echo esc($rc['age'])?></td>
+                </tr>
+            <?php endforeach?>
+        </table>
     </div>
 </body>
 </html>
