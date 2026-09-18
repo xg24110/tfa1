@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Index extends Basecontroller{
+class Index extends BaseController{
 
     public function landing(){
         return view('landing');
