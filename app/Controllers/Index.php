@@ -15,19 +15,19 @@ class Index extends Basecontroller{
     public function customer(){
         $data = array(
             'customers' => [
-                ['name' => 'John Doe',
+                ['name' => 'Nathan Cole',
                 'age' => '30'],
                 
-                ['name' => 'Jane Doe', 
+                ['name' => 'Sophia Cruz', 
                 'age' => '21'],
                 
-                ['name' => 'John Doe',
+                ['name' => 'Elijah Torres',
                 'age' => '25'],
                 
-                ['name' => 'John Doe',
+                ['name' => 'Marcus Smith',
                 'age' => '55'],
                 
-                ['name' => 'Jane Doe',
+                ['name' => 'Isabella Tan',
                 'age' => '19']
             ]
 
@@ -39,23 +39,23 @@ class Index extends Basecontroller{
         public function user(){
         $data = array(
             'users' => [
-                ['name' => 'Jane Doe',
+                ['name' => 'Eliza Williams',
                 'age' => '35',
                 'role' => 'Employee'],
 
-                ['name' => 'Jane Doe',
+                ['name' => 'Chloe Santos',
                 'age' => '21',
                 'role' => 'Employee'],
 
-                ['name' => 'John Doe',
+                ['name' => 'Josh Bautista',
                 'age' => '20',
                 'role' => 'Employee'],
 
-                ['name' => 'John Doe',
+                ['name' => 'John Cruz',
                 'age' => '18',
                 'role' => 'Employee'],
 
-                ['name' => 'Jane Doe',
+                ['name' => 'Mia Reyes',
                 'age'=> '23',
                 'role' => 'Employee'],
             ]
